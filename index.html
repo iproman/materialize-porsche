@@ -18,6 +18,10 @@
             background-position: center;
             min-height: 1000px;
         }
+        .section{
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
 
         @media screen and (max-width: 670px) {
             header {
@@ -53,7 +57,7 @@
 <section class="container section" id="photos">
     <div class="row">
         <div class="col s12 l4">
-            <img src="img/p_car.jpg" alt="" class="responsive-img">
+            <img src="img/p_car.jpg" alt="" class="responsive-img materialboxed">
         </div>
         <div class="col s12 l6 offset-l1">
             <h2 class="indigo-text text-darken-4">Porsche portrait</h2>
@@ -64,9 +68,9 @@
     </div>
     <div class="row">
         <div class="col s12 l4 push-l7 offset-l1">
-            <img src="img/c_car.jpg" alt="" class="responsive-img">
+            <img src="img/n_car.jpg" alt="" class="responsive-img materialboxed">
         </div>
-        <div class="col s12 l6 pull-l4">
+        <div class="col s12 l6 pull-l5 right-align offset-l1">
             <h2 class="indigo-text text-darken-4">Porsche city</h2>
             <p>
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur commodi dolorum eligendi ipsa molestiae necessitatibus officia repellat sed? Animi debitis, eaque eveniet iste maiores minima officia perspiciatis reprehenderit vel?</span>
@@ -75,7 +79,7 @@
     </div>
     <div class="row">
         <div class="col s12 l4 ">
-            <img src="img/n_car.jpg" alt="" class="responsive-img">
+            <img src="img/c_car.jpg" alt="" class="responsive-img materialboxed">
         </div>
         <div class="col s12 l6 offset-l1">
             <h2 class="indigo-text text-darken-4">Porsche nature</h2>
@@ -101,6 +105,8 @@
 <script>
     $(document).ready(function () {
         $('.sidenav').sidenav();
+
+        $('.materialboxed').materialbox();
     });
 </script>
 </body>
