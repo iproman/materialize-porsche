@@ -24,10 +24,11 @@
             padding-bottom: 4vw;
         }
 
-        .tabs .indicator{
+        .tabs .indicator {
             background-color: #1a237e;
         }
-        .tabs .tab a:focus, .tabs .tab a:focus.active{
+
+        .tabs .tab a:focus, .tabs .tab a:focus.active {
             background: transparent;
         }
 
@@ -203,6 +204,10 @@
                     <textarea id="message" class="materialize-textarea"></textarea>
                     <label for="message">Your message</label>
                 </div>
+                <div class="input-field">
+                    <input type="text" id="date" class="datepicker">
+                    <label for="date">Choose a date you need me for ...</label>
+                </div>
             </form>
         </div>
     </div>
@@ -218,6 +223,9 @@
         $('.materialboxed').materialbox();
         $('.parallax').parallax();
         $('.tabs').tabs();
+        $('.datepicker').datepicker({
+            disableWeekends: true,
+        });
     });
 </script>
 </body>
